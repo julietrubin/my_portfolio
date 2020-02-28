@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 import Repository from "../components/repository"
 import Layout from "../components/layout"
 import Avatar from "../components/avatar"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
@@ -19,9 +18,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title={`${name} repos`} />
       <div style={{ maxWidth: `960px`, marginBottom: `1.45rem` }}>
-        <div style={{ maxWidth: `480px`, margin: `0px auto` }}>
-          <Image />
-        </div>
         <div
           style={{
             display: `flex`,

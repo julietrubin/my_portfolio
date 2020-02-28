@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import Octicon, { MarkGithub } from "@githubprimer/octicons-react"
 
 import "./layout.css"
 
@@ -31,12 +30,6 @@ const Layout = ({ children }) => (
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>{" "}
-          </span>
-          <span>
-            <Octicon icon={MarkGithub} />{" "}
-            <a href="https://github.com/lundgren2/gatsby-starter-github-api">
-              Github
-            </a>
           </span>
         </footer>
       </div>
