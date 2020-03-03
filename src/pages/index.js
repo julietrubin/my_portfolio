@@ -38,6 +38,7 @@ const IndexPage = ({ data }) => {
             )}
           </div>
         </div>
+        <div> test netlify deploy</div>
         {repositories.nodes
           .map(repo => <Repository key={repo.name} repo={repo} />)
           .reverse()}
