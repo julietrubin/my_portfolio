@@ -7,7 +7,6 @@ const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 const GITHUB_API_TOKEN = process.env.GITHUB_API_TOKEN;
 
 
-
 const encode = (data) => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -83,12 +82,12 @@ const ContactForm = () => {
                         />
                         {touched.message && errors.message && <p className={mystyles.error}>{errors.message}</p>}
                     </div>
-                    <Field
+                    {/* <Field
                         component={Recaptcha}
                         sitekey={RECAPTCHA_KEY}
                         name="recaptcha"
                         onChange={value => setFieldValue('recaptcha', value)}
-                    />
+                    /> */}
                     <div className='buttons'>
                         <input name='submit' type='submit' disabled={isSubmitting} value='Send'
                         className={mystyles.button} />
