@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formik, Field } from 'formik'
+import { Formik, Field, ErrorMessage, InputField, FastField } from 'formik'
 import validationSchema from './validationSchema'
 import mystyles from './contact.module.scss'
 import Recaptcha from 'react-google-recaptcha'
@@ -78,13 +78,17 @@ const ContactForm = () => {
                         />
                         {touched.message && errors.message && <p className={mystyles.error}>{errors.message}</p>}
                     </div>
-                    <Field
-                        component={Recaptcha}
-                        sitekey={RECAPTCHA_KEY}
-                        name="recaptcha"
-                        onChange={value => setFieldValue('recaptcha', value)}
-                    />
-                    {errors.recaptcha && <p className={mystyles.error}>{errors.recaptcha}</p>}
+                    {values.name && values.email && values.message && (
+                        <div>
+                            <Field
+                                component={Recaptcha}
+                                sitekey={RECAPTCHA_KEY}
+                                name="recaptcha"
+                                onChange={value => setFieldValue('recaptcha', value)}
+                            />
+                            {errors.recaptcha && isSubmitting && <p className={mystyles.error}>{errors.recaptcha}</p>}
+                        </div>
+                    )}
                     <div className='buttons'>
                         <input name='submit' type='submit' disabled={isSubmitting} value='Send'
                         className={mystyles.button} />
