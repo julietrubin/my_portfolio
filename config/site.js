@@ -4,6 +4,7 @@ module.exports = {
   author: `@julietrubin`,
   siteUrl: `https://www.julietrubin.com`,
   githubApiToken: process.env.GITHUB_API_TOKEN,
+  recaptchaKey: process.env.SITE_RECAPTCHA_KEY,
   githubApiQuery: `query ($number_of_repos: Int!) {
     viewer {
       name
