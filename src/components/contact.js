@@ -15,7 +15,7 @@ const ContactForm = () => {
         <Formik
             initialValues={{ name: '', email: '', message: '' }}
             validationSchema={validationSchema}
-            onSubmit={(values, { setSubmitting }) => {
+            onSubmit={(values, { setSubmitting, setFieldValue, resetForm }) => {
                 fetch("/?no-cache=1", {   
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -25,19 +25,23 @@ const ContactForm = () => {
                     }),
                 })
                 .then(() => {
-                    alert('Success!')
+                    resetForm();
                     setSubmitting(false)
+                    setFieldValue('success', true)
                 })
                 .catch(error => {
                     alert('Error: Please Try Again!')                            
                     setSubmitting(false)
+                    setFieldValue('success', false)
+
                 })
             }}
             render={({
                 touched,
                 errors,
                 isSubmitting,
-                handleSubmit, 
+                handleSubmit,
+                values,
             }) => (
                 <form className='form'
                     name='contact'
@@ -76,6 +80,11 @@ const ContactForm = () => {
                         <input name='submit' type='submit' disabled={isSubmitting} value='Send'
                         className={mystyles.button} />
                     </div>
+                    {values.success && (
+                        <p className={mystyles.success}>
+                            Your message has been sent.
+                        </p>
+                    )}
                 </form>
             )}
         />

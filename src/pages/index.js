@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
         >
           <Avatar img={avatarUrl} />
           <div style={{ padding: 16 }}>
-            <h2 style={{ border: `none` }}>{name}</h2>
+            <h2 style={{ border: `none`, fontSize: '20px' }}>{name}</h2>
             {isHireable && (
               <h3 style={{ marginBottom: 0 }}>
                 I'm Hireable{" "}
@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => {
             )}
           </div>
         </div>
-        <h1 style={{ 'padding-bottom': '16px', 'font-size': '20px' }}>Contact Me</h1>
+        <h1 style={{ paddingBottom: '16px', 'font-size': '20px' }}>Contact Me</h1>
         <Contact />
         {repositories.nodes
           .map(repo => <Repository key={repo.name} repo={repo} />)
