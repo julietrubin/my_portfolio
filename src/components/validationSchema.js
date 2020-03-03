@@ -10,6 +10,9 @@ const validationSchema = Yup.object().shape({
     .required('Email is Required'),
   message: Yup.string()
     .required('Message is Required'),
+  recaptcha: Yup.string()
+    .required('Click recaptcha'),
+
 })
 
 export default validationSchema

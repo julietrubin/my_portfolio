@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => {
             )}
           </div>
         </div>
-        <h1 style={{ paddingBottom: '16px', 'font-size': '20px' }}>Contact Me</h1>
+        <h1 style={{ paddingBottom: '16px', fontSize: '20px' }}>Contact Me</h1>
         <Contact />
         {repositories.nodes
           .map(repo => <Repository key={repo.name} repo={repo} />)
