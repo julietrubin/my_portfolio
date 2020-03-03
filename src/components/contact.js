@@ -5,7 +5,6 @@ import mystyles from './contact.module.scss'
 import Recaptcha from 'react-google-recaptcha'
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 const GITHUB_API_TOKEN = process.env.GITHUB_API_TOKEN;
-const config = require("../../config/site")
 
 const encode = (data) => {
     return Object.keys(data)
@@ -16,8 +15,6 @@ const encode = (data) => {
 const ContactForm = () => {
     console.log({RECAPTCHA_KEY})
     console.log({GITHUB_API_TOKEN})
-    console.log(process.env)
-    console.log({config})
     return (
         <Formik
             initialValues={{ name: '', email: '', message: '' }}
@@ -83,12 +80,12 @@ const ContactForm = () => {
                         />
                         {touched.message && errors.message && <p className={mystyles.error}>{errors.message}</p>}
                     </div>
-                    {/* <Field
+                    <Field
                         component={Recaptcha}
                         sitekey={RECAPTCHA_KEY}
                         name="recaptcha"
                         onChange={value => setFieldValue('recaptcha', value)}
-                    /> */}
+                    />
                     <div className='buttons'>
                         <input name='submit' type='submit' disabled={isSubmitting} value='Send'
                         className={mystyles.button} />
