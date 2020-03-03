@@ -5,6 +5,7 @@ import Repository from "../components/repository"
 import Layout from "../components/layout"
 import Avatar from "../components/avatar"
 import SEO from "../components/seo"
+import Contact from "../components/contact"
 
 const IndexPage = ({ data }) => {
   const {
@@ -38,7 +39,7 @@ const IndexPage = ({ data }) => {
             )}
           </div>
         </div>
-        <div> test netlify deploy</div>
+        <Contact />
         {repositories.nodes
           .map(repo => <Repository key={repo.name} repo={repo} />)
           .reverse()}
