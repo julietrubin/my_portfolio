@@ -3,8 +3,8 @@ import { Formik, Field } from 'formik'
 import validationSchema from './validationSchema'
 import mystyles from './contact.module.scss'
 import Recaptcha from 'react-google-recaptcha'
+
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
-const GITHUB_API_TOKEN = process.env.GITHUB_API_TOKEN;
 
 const encode = (data) => {
     return Object.keys(data)
@@ -13,8 +13,6 @@ const encode = (data) => {
   }
 
 const ContactForm = () => {
-    console.log({RECAPTCHA_KEY})
-    console.log({GITHUB_API_TOKEN})
     return (
         <Formik
             initialValues={{ name: '', email: '', message: '' }}
@@ -86,6 +84,7 @@ const ContactForm = () => {
                         name="recaptcha"
                         onChange={value => setFieldValue('recaptcha', value)}
                     />
+                    {errors.recaptcha && <p className={mystyles.error}>{errors.recaptcha}</p>}
                     <div className='buttons'>
                         <input name='submit' type='submit' disabled={isSubmitting} value='Send'
                         className={mystyles.button} />
