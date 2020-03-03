@@ -1,6 +1,8 @@
 import React from 'react'
 import { Formik, Field } from 'formik'
 import validationSchema from './validationSchema'
+import mystyles from './contact.module.scss'
+
 
 const encode = (data) => {
     return Object.keys(data)
@@ -35,49 +37,44 @@ const ContactForm = () => {
                 touched,
                 errors,
                 isSubmitting,
-                handleSubmit,
-                handleReset,
+                handleSubmit, 
             }) => (
                 <form className='form'
                     name='contact'
                     onSubmit={handleSubmit}
-                    onReset={handleReset}
                     data-netlify='true'
                     data-netlify-honeypot='bot-field'
                 >
                     <div className='field'>
-                        <label htmlFor='name' className='label'>Name</label>
                         <Field
-                            className='input'
+                            className={mystyles.input}
                             type='text'
                             name='name'
+                            placeholder='Name'
                         />
-                        {touched.name && errors.name && <p className='danger'>{errors.name}</p>}
+                        {touched.name && errors.name && <p className={mystyles.error}>{errors.name}</p>}
                     </div>
                     <div className='field'>
-                        <label htmlFor='email' className='label'>Email</label>
                         <Field
-                            className='input'
+                            className={mystyles.input}
                             type='text'
                             name='email'
+                            placeholder='Email'
                         />
-                        {touched.email && errors.email && <p className='danger'>{errors.email}</p>}
+                        {touched.email && errors.email && <p className={mystyles.error}>{errors.email}</p>}
                     </div>
                     <div className='field'>
-                        <label htmlFor='message' className='label'>Message</label>
                         <Field
-                            className='input-textarea'
+                            className={mystyles.input}
                             name='message'
                             component='textarea'
                             rows='6'
                         />
-                        {touched.message && errors.message && <p className='danger'>{errors.message}</p>}
+                        {touched.message && errors.message && <p className={mystyles.error}>{errors.message}</p>}
                     </div>
                     <div className='buttons'>
-                        <input type='reset' value='Clear'
-                        className='button' />
-                        <input name='submit' type='submit' disabled={isSubmitting} value='Send Message'
-                        className='button' />
+                        <input name='submit' type='submit' disabled={isSubmitting} value='Send'
+                        className={mystyles.button} />
                     </div>
                 </form>
             )}

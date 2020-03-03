@@ -1,5 +1,5 @@
 import React from "react"
-import Octicon, { Law, Star } from "@githubprimer/octicons-react"
+import Octicon, { Star } from "@githubprimer/octicons-react"
 import GitHubButton from "react-github-btn"
 
 const RepositoryHeader = ({ repo }) => {
