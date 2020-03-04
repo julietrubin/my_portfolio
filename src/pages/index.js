@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import Avatar from "../components/avatar"
 import SEO from "../components/seo"
 import Contact from "../components/contact"
+import Header from "../components/header"
+
 
 const IndexPage = ({ data }) => {
   const {
@@ -17,6 +19,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <Header />
       <SEO title={`${name} repos`} />
       <div style={{ maxWidth: `960px`, marginBottom: `1.45rem` }}>
         <div
