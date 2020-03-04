@@ -10,10 +10,13 @@ const encode = (data) => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
       .join('&')
-  }
+  } 
 
 const ContactForm = () => {
     return (
+        <div>
+        <h1>contact me</h1>
+
         <Formik
             initialValues={{ name: '', email: '', message: '' }}
             validationSchema={validationSchema}
@@ -101,6 +104,7 @@ const ContactForm = () => {
                 </form>
             )}
         />
+        </div>
   )
 }
 

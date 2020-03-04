@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Footer from "./footer"
+import Header from "./header"
+
 
 import "./layout.css"
 import "./normalize.css"
@@ -19,7 +21,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div>
-        <main style={{padding: "10px"}}>{children}</main>
+        <Header />
+        <main style={{padding: "0 50px"}}>{children}</main>
         <Footer />
       </div>
     )}

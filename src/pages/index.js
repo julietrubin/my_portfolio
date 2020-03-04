@@ -3,46 +3,24 @@ import { graphql } from "gatsby"
 
 import Repository from "../components/repository"
 import Layout from "../components/layout"
-import Avatar from "../components/avatar"
 import SEO from "../components/seo"
 import Contact from "../components/contact"
-import Header from "../components/header"
+import AboutMe from "../components/aboutme"
 
 
 const IndexPage = ({ data }) => {
   const {
     name,
     avatarUrl,
-    isHireable,
     repositories,
   } = data.githubData.data.viewer
 
   return (
     <Layout>
-      <Header />
       <SEO title={`${name} repos`} />
+      <AboutMe avatarUrl={avatarUrl} />
+
       <div style={{ maxWidth: `960px`, marginBottom: `1.45rem` }}>
-        <div
-          style={{
-            display: `flex`,
-            alignItems: `center`,
-            margin: `1.45rem 0`,
-          }}
-        >
-          <Avatar img={avatarUrl} />
-          <div style={{ padding: 16 }}>
-            <h2 style={{ border: `none`, fontSize: '20px' }}>{name}</h2>
-            {isHireable && (
-              <h3 style={{ marginBottom: 0 }}>
-                I'm Hireable{" "}
-                <span role="img" aria-label="hand">
-                  👋
-                </span>
-              </h3>
-            )}
-          </div>
-        </div>
-        <h1 style={{ paddingBottom: '16px', fontSize: '20px' }}>Contact Me</h1>
         <Contact />
         {repositories.nodes
           .map(repo => <Repository key={repo.name} repo={repo} />)
@@ -61,7 +39,6 @@ export const gitHubQuery = graphql`
         viewer {
           name
           avatarUrl
-          isHireable
           repositories {
             nodes {
               name

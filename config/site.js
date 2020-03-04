@@ -8,7 +8,6 @@ module.exports = {
     viewer {
       name
       avatarUrl
-      isHireable
       resourcePath
       repositories(last: $number_of_repos, privacy: PUBLIC, orderBy: { field: STARGAZERS, direction:ASC } ) {
         nodes {

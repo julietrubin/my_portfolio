@@ -1,15 +1,15 @@
 .header {
-    position: absolute;
-    right: 30px;
+    padding: 30px 40px;
+    text-align: right;
+    background-color: black;
 }
 
 .link {
     text-decoration: none;
     font-size: 18px;
-    color: black;
+    color: white;
 }
 
 .link:hover {
-    color: darkturquoise;
+    color: lightskyblue;
 }
-
