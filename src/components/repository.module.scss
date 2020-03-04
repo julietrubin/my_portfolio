@@ -1,0 +1,15 @@
+// style={{ display: `flex`, justifyContent: `space-between`, fontSize: 14 }}
+
+// .grid {
+//     display: grid;
+// 	align-items: center;
+// 	grid-template-columns: repeat(3, 1fr);
+// 	grid-template-rows: 8fr;
+// 	gap: 1.2rem 1.2rem;
+// }
+
+.repository {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}

@@ -1,11 +1,12 @@
 import React from "react"
 import Octicon, { Star } from "@githubprimer/octicons-react"
 import GitHubButton from "react-github-btn"
+import mystyles from './repository.module.scss'
 
 const RepositoryHeader = ({ repo }) => {
   return (
     <div
-      style={{ display: `flex`, justifyContent: `space-between`, fontSize: 14 }}
+      className={mystyles.repository}
     >
       <h3
         style={{

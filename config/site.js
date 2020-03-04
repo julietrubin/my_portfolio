@@ -9,7 +9,7 @@ module.exports = {
       name
       avatarUrl
       resourcePath
-      repositories(last: $number_of_repos, privacy: PUBLIC, orderBy: { field: STARGAZERS, direction:ASC } ) {
+      repositories(last: $number_of_repos, privacy: PUBLIC, orderBy: { field: CREATED_AT, direction:ASC } ) {
         nodes {
           name
           description

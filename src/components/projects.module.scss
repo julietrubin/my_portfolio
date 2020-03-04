@@ -1,0 +1,8 @@
+// style={{ maxWidth: `960px`, marginBottom: `1.45rem` }}
+
+.grid {
+    display: grid;
+	align-items: center;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.2rem 1.2rem;
+}

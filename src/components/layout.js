@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
     render={data => (
       <div>
         <Header />
-        <main style={{padding: "0 50px"}}>{children}</main>
+        <main style={{padding: "0 50px 100px 50px"}}>{children}</main>
         <Footer />
       </div>
     )}

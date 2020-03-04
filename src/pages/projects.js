@@ -3,14 +3,14 @@ import React from "react"
 import Layout from "../components/layout"
 import Repository from "../components/repository"
 
+import mystyles from '../components/projects.module.scss'
+
 
 const ProjectsPage = ({data}) => {
     const {repositories} = data.githubData.data.viewer;
     return (
         <Layout>
-            
-
-            <div style={{ maxWidth: `960px`, marginBottom: `1.45rem` }}>
+            <div className={mystyles.grid}>
                 {repositories.nodes
                 .map(repo => <Repository key={repo.name} repo={repo} />)
                 .reverse()}
