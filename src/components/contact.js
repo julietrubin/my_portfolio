@@ -20,7 +20,7 @@ const Contact = () => {
             <Formik
                 initialValues={{ name: '', email: '', message: '' }}
                 validationSchema={validationSchema}
-                onSubmit={(values, { setSubmitting, setFieldValue, resetForm }) => {
+                onSubmit={({ name, email, message, recaptcha }, { setSubmitting, setFieldValue, resetForm }) => {
                     fetch("/?no-cache=1", {   
                         method: 'POST',
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
