@@ -21,7 +21,7 @@ const FollowMe = () => {
                 aria-label="twitter"
                 rel="noopener noreferrer"
             >
-                <img width="24" src="/icons/twitter.svg" alt="Twitter" />
+                <img width="24" src="/icons/t-icon.svg"  />
             </a>
 
             <a href="https://www.linkedin.com/in/julietrubin"
@@ -30,7 +30,7 @@ const FollowMe = () => {
                 aria-label="linkedin"
                 rel="noopener noreferrer"
             >
-                <img width="24" src="/icons/linkedin.svg" alt="Linkedin" />
+                <img width="24" src="/icons/l-icon.svg" />
             </a>
         </div>
     );
