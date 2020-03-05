@@ -6,16 +6,9 @@ import mystyles from './repository.module.scss'
 const RepositoryHeader = ({ repo }) => {
   return (
     <div
-      className={mystyles.repository}
+      className={mystyles.header}
     >
-      <h3
-        style={{
-          display: `flex`,
-          justifyContent: `space-between`,
-          marginBottom: 0,
-          fontSize: 20,
-        }}
-      >
+      <h3>
         <a
           href={`https://github.com${repo.resourcePath}`}
           target="_blank"
@@ -37,7 +30,7 @@ const RepositoryHeader = ({ repo }) => {
 }
 
 const FooterItem = ({ children }) => (
-  <span style={{ marginRight: 16 }}>{children}</span>
+  <span className={mystyles.footer_item}>{children}</span>
 )
 
 const RepositoryFooter = ({ repo }) => {
@@ -53,16 +46,11 @@ const RepositoryFooter = ({ repo }) => {
     )
   }
   return (
-    <div style={{ color: `#586069`, fontSize: 12 }}>
+    <div className={mystyles.footer}>
       <FooterItem>
         <span
+          className={mystyles.language_icon}
           style={{
-            borderRadius: `50%`,
-            display: `inline-block`,
-            height: 12,
-            position: `relative`,
-            top: 1,
-            width: 12,
             backgroundColor: language.color,
           }}
         />{" "}
@@ -79,8 +67,8 @@ const RepositoryFooter = ({ repo }) => {
 }
 
 const RepositoryDescription = ({ repo }) => (
-  <div style={{ width: `75%` }}>
-    <p style={{ color: `#586069`, marginBottom: 0 }}>
+  <div className={mystyles.description}>
+    <p>
       {repo.description}
 
       {repo.homepageUrl && (
@@ -95,12 +83,7 @@ const RepositoryDescription = ({ repo }) => (
 const Repository = ({ repo }) => {
   return (
     <div
-      style={{
-        borderBottom: `1px solid #e1e4e8`,
-        marginBottom: `1rem`,
-        padding: `1rem`,
-        fontSize: 16,
-      }}
+      className={mystyles.repository}
     >
       <RepositoryHeader repo={repo} />
       <RepositoryDescription repo={repo} />
