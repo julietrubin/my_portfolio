@@ -26,7 +26,10 @@ const Contact = () => {
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: encode({
                             'form-name': 'contact',
-                            ...values,
+                            name,
+                            email,
+                            message,
+                            'g-recaptcha-response': recaptcha,
                         }),
                     })
                     .then(() => {
