@@ -11,7 +11,8 @@ const ProjectsPage = ({data}) => {
     const {repositories} = data.githubData.data.viewer;
     return (
         <Layout>
-                <SEO title="Juliet Rubin | Projects" />
+            <SEO title="Juliet Rubin | Projects" />
+            <h1>projects</h1>
             <div className={mystyles.grid}>
                 {repositories.nodes
                 .map(repo => <Repository key={repo.name} repo={repo} />)
