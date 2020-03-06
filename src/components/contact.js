@@ -50,7 +50,7 @@ const ContactForm = ({touched, submitCount, errors, isSubmitting, handleSubmit,
     values, setFieldValue}) => {
 
     return (
-        <form className='form'
+        <form className={mystyles.form}
             name='contact'
             data-netlify-recaptcha="true"
             onSubmit={handleSubmit}

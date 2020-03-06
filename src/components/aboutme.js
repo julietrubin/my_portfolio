@@ -1,6 +1,7 @@
 import React from "react"
 import mystyles from './aboutme.module.scss'
 import FollowMe from './follow-me'
+import { Link } from "gatsby"
 
 
 const AboutMe = ({avatarUrl}) => {
@@ -14,6 +15,11 @@ const AboutMe = ({avatarUrl}) => {
                 className={mystyles.avatar}
             />
             <FollowMe />
+            <Link to="/contact">contact me</Link>
+            <a className={mystyles.link} href="https://gitconnected.com/julietrubin/resume" target="_blank">view resume</a>
+            <Link to="/contact">view projects</Link>
+
+
         </div>
     );
 }

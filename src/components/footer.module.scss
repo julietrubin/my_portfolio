@@ -2,21 +2,38 @@
     background-color: black;
     color: white;
     font-size: 15px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
+    height: 150px;
+    // display: flex;
+    // align-items: center;
+    // position: fixed;
+    // bottom: 0;
     width: 100%;
-    justify-content: center;
+    padding-top: 10px;
+    // justify-content: center;
+    // text-align: center
+    flex-grow: 1;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: -5px;
+    }
 }
 
 .my_portfolio {
-    text-decoration: none;
-    padding: 5px;
-    color: blue
+    a {
+        text-decoration: none;
+        color: blue;
+        padding: 0 6px;
+        font-size: 16px;
+    }
+    padding: 15px;
 }
 
 .svg {
     padding: 5px;
 }
+
+

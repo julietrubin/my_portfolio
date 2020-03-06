@@ -20,9 +20,10 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div>
+      <div id="outer-container" style={{"height": "100%"}}>
+        <div className="my_name">Juliet Rubin</div>
         <Header />
-        <main style={{padding: "15px 50px 100px 50px"}}>{children}</main>
+        <main id="page-wrap" >{children}</main>
         <Footer />
       </div>
     )}

@@ -4,15 +4,16 @@
 
     h3 {
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
 .description {
-    width: 75%;
+    // width: 75%;
     p {
         color: #586069;
         margin-bottom: 0;
+        font-size: 14px;
     }
 }
 
@@ -29,9 +30,11 @@
 .repository {
     border: 2px solid #e1e4e8;
     margin-bottom: 1rem;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 12px;
+    // padding: 1rem 1rem 1rem 2rem;
+    overflow: hidden;
     font-size: 16px;
-    height: 130px;
+    // height: 130px;
     box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 6px 0px;
 }
 
