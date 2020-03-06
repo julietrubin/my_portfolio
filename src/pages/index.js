@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={`${name} repos`} />
+      <SEO title="Juliet Rubin" />
       <AboutMe avatarUrl={avatarUrl} />
     </Layout>
   )
