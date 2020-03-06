@@ -11,7 +11,6 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Juliet Rubin's Portfolio"
-                    
                 >
                     Juliet Rubin
                 </a>

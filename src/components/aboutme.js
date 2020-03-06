@@ -17,7 +17,7 @@ const AboutMe = ({avatarUrl}) => {
             <FollowMe />
             <Link to="/contact">contact me</Link>
             <a className={mystyles.link} href="https://gitconnected.com/julietrubin/resume" target="_blank">view resume</a>
-            <Link to="/contact">view projects</Link>
+            <Link to="/view projects">view projects</Link>
 
 
         </div>
