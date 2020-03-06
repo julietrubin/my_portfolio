@@ -78,7 +78,7 @@ const ContactForm = ({touched, submitCount, errors, isSubmitting, handleSubmit,
             <div className='field'>
                 <Field
                     className={mystyles.input}
-                    placeholder='mssage'
+                    placeholder='message'
                     name='message'
                     component='textarea'
                     rows='6'
