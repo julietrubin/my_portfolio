@@ -21,7 +21,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div id="outer-container" style={{"height": "100%"}}>
-        <div className="my_name">Juliet Rubin</div>
         <Header />
         <main id="page-wrap" >{children}</main>
         <Footer />

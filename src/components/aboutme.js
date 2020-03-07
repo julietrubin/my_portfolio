@@ -1,10 +1,16 @@
 import React from "react"
+
+import { Link } from "gatsby"
+import {isMobile} from 'react-device-detect';
+// import classNames from 'classnames';
+
 import mystyles from './aboutme.module.scss'
 import FollowMe from './follow-me'
-import { Link } from "gatsby"
 
 
 const AboutMe = ({avatarUrl}) => {
+    // const sectionClassName = classNames({ is_mobile: isMobile, about_me_section: true, is_desktop: !isMobile }); 
+
     return (
         <div className={mystyles.about_me_section}>
             <h1 className={mystyles.header}>about me</h1>
@@ -16,10 +22,8 @@ const AboutMe = ({avatarUrl}) => {
             />
             <FollowMe />
             <Link to="/contact">contact me</Link>
-            <a className={mystyles.link} href="https://gitconnected.com/julietrubin/resume" target="_blank">view resume</a>
             <Link to="/projects">view projects</Link>
-
-
+            <a className={mystyles.link} href="https://gitconnected.com/julietrubin/resume" target="_blank">view resume</a>
         </div>
     );
 }
