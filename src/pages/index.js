@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import AboutMe from "../components/aboutme"
+import Layout from "../components/common/layout"
+import SEO from "../components/common/seo"
+import AboutMe from "../components/landing/aboutme/aboutme"
 
 
 const IndexPage = ({ data }) => {
-  const {avatarUrl, name} = data.githubData.data.viewer;
+  const {avatarUrl} = data.githubData.data.viewer;
 
   return (
     <Layout>

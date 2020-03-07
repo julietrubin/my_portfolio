@@ -1,10 +1,18 @@
 import React from "react"
 import mystyles from './footer.module.scss'
-
+import {isMobile} from 'react-device-detect';
+import classNames from 'classnames/bind';
 
 const Footer = () => {
+    let cx = classNames.bind(mystyles);
+    let container = cx({
+      mobile: isMobile, 
+      desktop: !isMobile,
+      container: true
+    });
+  
     return (
-        <footer className={mystyles.footer}>
+        <footer className={container}>
             <div className={mystyles.my_portfolio} >
                 © 
                 <a href="https://www.julietrubin.com" 
