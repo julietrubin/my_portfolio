@@ -6,37 +6,35 @@
     margin: 0 auto;
 }
 
-.about_me {
+.text {
     // width: 60%;
     display: inline-block;
-    margin: 43px;
     order: 2;
-
 }
 
-.about_me_section {
-    // padding: 30px 0;
+.header {
+    // margin-bottom: 0;
+    margin: 20px auto;
+}
+
+.mobile {
     display: flex;
     flex-direction: column;
-
     a {
         order: 4;
         color: blue;
         font-size: 20px;
         margin: 10px auto
     }
+    text {
+        margin: 43px;
+    }
 }
 
-.header {
-    // margin-bottom: 0;
-    margin: 20px auto;
-
-}
-
-.is_desktop {
-    .about_me {
+.desktop {
+    .text {
         width: 600px;
         order: 1;
+        padding-right: 40px;
     }
-
 }

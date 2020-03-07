@@ -1,30 +1,12 @@
-.header {
-    padding: 30px 50px;
-    text-align: right;
-    background-color: darkcyan;
-}
-
 .link {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     padding: 0 5px;
 }
 
-.link:hover {
-    color: cornsilk;
-}
-
-.my_name_desktop {
-    color: white;
-    position: absolute;
-    font-size: 30px;
-}
-
-/*
-    Mobile Web Style
-*/
-.mobileHeader {
+/* Mobile Web Style */
+.mobile {
     .link {
         display: flex;
         padding: 10px 0;
@@ -38,3 +20,19 @@
     }
 }
 
+/* Desktop Style */
+.desktop {
+    padding: 30px 50px;
+    text-align: right;
+    background-color: darkcyan;
+
+    .my_name {
+        color: white;
+        position: absolute;
+        font-size: 30px;
+    }
+
+    .link:hover {
+        color: cornsilk;
+    }
+}

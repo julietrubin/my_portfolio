@@ -1,14 +1,10 @@
-.follow_me {
+.container {
     width: 185px;
     height: 77px;
     background-color: purple;
     padding: 20px 0 0 57px;
     color: white;
     border-radius: 5px;
-    // margin-top: 30px;
-    margin: 0 auto;
-    order: 3;
-    margin-bottom: 20px;
 }
 
 .svg {
@@ -18,4 +14,16 @@
 .header {
     padding-bottom: 10px;
     font-size: 20px;
+}
+
+/* Desktop Style */
+.desktop {
+    margin-top: 30px;
+}
+
+/* Mobile Web Style */
+.mobile {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    order: 3;
 }

@@ -1,10 +1,19 @@
 import React from "react"
 import mystyles from './follow-me.module.scss'
+import classNames from 'classnames/bind';
+import {isMobile} from 'react-device-detect';
 
 
 const FollowMe = () => {
+    let cx = classNames.bind(mystyles);
+    let container = cx({
+      mobile: isMobile, 
+      desktop: !isMobile,
+      container: true,
+    });
+
     return (
-        <div className={mystyles.follow_me}>
+        <div className={container}>
             <div className={mystyles.header}>Follow me on</div>
             <a href="https://www.github.com/julietrubin"
                 target="_blank"

@@ -11,7 +11,7 @@ import './burger.css'
 const Header = () => {
     if (isMobile) {
         return (
-            <div className={mystyles.mobileHeader}>
+            <div className={mystyles.mobile}>
                 <div className={mystyles.my_name}>Juliet Rubin</div>
                 <Menu className={mystyles.menu} right outerContainerId={ "outer-container" } pageWrapId={ "page-wrap" } disableAutoFocus>
                     <HeaderLinks />
@@ -21,8 +21,8 @@ const Header = () => {
     }
     else {
         return (
-            <header className={mystyles.header}>
-                <div className={mystyles.my_name_desktop}>Juliet Rubin</div>
+            <header className={mystyles.desktop}>
+                <div className={mystyles.my_name}>Juliet Rubin</div>
                 <HeaderLinks />
             </header>
         )
