@@ -7,36 +7,57 @@
 }
 
 .text {
-    // width: 60%;
     display: inline-block;
-    order: 2;
-}
-
-.header {
-    // margin-bottom: 0;
-    margin: 20px auto;
 }
 
 /* Mobile Web Style */
 .mobile {
-    display: flex;
-    flex-direction: column;
-    a {
+    .content {
+        flex-direction: column;
+    }
+
+    .link {
         order: 4;
         color: blue;
         font-size: 20px;
-        margin: 10px auto
+        margin: 10px auto;
+        justify-content: center;
+        display: flex;
     }
     .text {
         margin: 40px;
+        order: 2;
     }
+    .header {
+        // margin-bottom: 0;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+.content {
+    display: flex;
 }
 
 /* Desktop Style */
 .desktop {
+    padding: 0 20px;
+
     .text {
-        width: 600px;
+        width: 700px;
+        min-width: 700px;
         order: 1;
-        padding-right: 40px;
+        padding-right: 60px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        order: 1;
+
+    }
+    .avatar {
+        width: 250px;
+        height: 250px;
+    }
+    .header {
+        // margin-bottom: 0;
     }
 }
