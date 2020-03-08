@@ -1,8 +1,8 @@
 import React from "react"
 
-import Layout from "../components/common/layout/layout"
-import SEO from "../components/common/seo"
-import Contact from "../components/landing/contact/contact"
+import Layout from "../components/common/layout/index"
+import SEO from "../components/common/seo/index"
+import Contact from "../components/landing/contact/index"
 
 
 const ContactPage = () => {

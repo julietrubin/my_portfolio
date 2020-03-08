@@ -1,8 +1,8 @@
 import React from "react"
 
-import Layout from "../components/common/layout/layout"
-import SEO from "../components/common/seo"
-import Projects from "../components/landing/projects/projects"
+import Layout from "../components/common/layout/index"
+import SEO from "../components/common/seo/index"
+import Projects from "../components/landing/projects/index"
 
 const ProjectsPage = ({data}) => {
     const {repositories} = data.githubData.data.viewer;
