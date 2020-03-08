@@ -1,0 +1,42 @@
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    order: 1;
+    margin: 0 auto;
+}
+
+.text {
+    // width: 60%;
+    display: inline-block;
+    order: 2;
+}
+
+.header {
+    // margin-bottom: 0;
+    margin: 20px auto;
+}
+
+/* Mobile Web Style */
+.mobile {
+    display: flex;
+    flex-direction: column;
+    a {
+        order: 4;
+        color: blue;
+        font-size: 20px;
+        margin: 10px auto
+    }
+    .text {
+        margin: 40px;
+    }
+}
+
+/* Desktop Style */
+.desktop {
+    .text {
+        width: 600px;
+        order: 1;
+        padding-right: 40px;
+    }
+}

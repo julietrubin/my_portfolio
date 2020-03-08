@@ -1,0 +1,57 @@
+.container {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 10px;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.my_portfolio {
+    a {
+        text-decoration: none;
+        color: blue;
+        padding: 0 6px;
+        font-size: 16px;
+    }
+}
+
+.svg {
+    padding: 5px;
+}
+
+/* Mobile Web Style */
+.mobile {
+    font-size: 15px;
+    height: 150px;
+    padding-top: 10px;
+    flex-grow: 1;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: -5px;
+    }
+    
+    .my_portfolio {
+        padding: 15px;
+    }
+}
+
+/* Desktop Style */
+.desktop {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    text-align: center
+}

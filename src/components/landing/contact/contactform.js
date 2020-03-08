@@ -39,14 +39,14 @@ const ContactForm = () => {
                     setSubmitting(false)
                 })
             }}
-            render={(data) => ( <Form {...data} /> )}
+            render={(data) => ( <HTMLForm {...data} /> )}
         />
   )
 }
 
 
 
-const Form = ({touched, submitCount, errors, isSubmitting, handleSubmit, 
+const HTMLForm = ({touched, submitCount, errors, isSubmitting, handleSubmit, 
     values, setFieldValue}) => {
 
     return (

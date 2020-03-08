@@ -1,0 +1,38 @@
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 0 5px;
+}
+
+/* Mobile Web Style */
+.mobile {
+    .link {
+        display: flex;
+        padding: 10px 0;
+        font-size: 25px;
+    }
+
+    .my_name {
+        position: absolute;
+        top: 35px;
+        left: 20px;
+    }
+}
+
+/* Desktop Style */
+.desktop {
+    padding: 30px 50px;
+    text-align: right;
+    background-color: darkcyan;
+
+    .my_name {
+        color: white;
+        position: absolute;
+        font-size: 30px;
+    }
+
+    .link:hover {
+        color: cornsilk;
+    }
+}
