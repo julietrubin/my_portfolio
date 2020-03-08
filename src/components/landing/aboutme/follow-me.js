@@ -1,11 +1,8 @@
 import React from "react"
 import styles from './follow-me.module.scss'
-import DeviceLayout from '../../common/device'
-
-
+import DeviceLayout from '../../common/device/index'
 
 const FollowMe = () => {
-
     return (
         <DeviceLayout styles={styles}>
             <div className={styles.header}>Follow me on</div>
