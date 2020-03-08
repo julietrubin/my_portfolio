@@ -1,19 +1,11 @@
 import React from "react"
-import mystyles from './footer.module.scss'
-import {isMobile} from 'react-device-detect';
-import classNames from 'classnames/bind';
+import styles from './footer.module.scss'
+import DeviceLayout from './device'
 
 const Footer = () => {
-    let cx = classNames.bind(mystyles);
-    let container = cx({
-      mobile: isMobile, 
-      desktop: !isMobile,
-      container: true
-    });
-  
     return (
-        <footer className={container}>
-            <div className={mystyles.my_portfolio} >
+        <DeviceLayout styles={styles} tag="footer">
+            <div className={styles.my_portfolio} >
                 © 
                 <a href="https://www.julietrubin.com" 
                     target="_blank"
@@ -27,7 +19,7 @@ const Footer = () => {
                 2020 Built with 
                 <a href="https://www.gatsbyjs.org"
                     target="_blank"
-                    className={mystyles.svg}
+                    className={styles.svg}
                     aria-label="GatsbyJS"
                     rel="noopener noreferrer"
                 >
@@ -38,7 +30,7 @@ const Footer = () => {
                 Open sourced on
                 <a href="https://www.github.com"
                     target="_blank"
-                    className={mystyles.svg}
+                    className={styles.svg}
                     aria-label="github"
                     rel="noopener noreferrer"
                 >
@@ -49,14 +41,14 @@ const Footer = () => {
                 and deployed on 
                 <a href="https://www.netlify.com"
                     target="_blank"
-                    className={mystyles.svg}
+                    className={styles.svg}
                     aria-label="netlify"
                     rel="noopener noreferrer"
                 >
                     <img width="24" src="/icons/netlify.svg" alt="Netlify" />
                 </a>
             </div>
-        </footer>
+        </DeviceLayout>
     );
 }
 

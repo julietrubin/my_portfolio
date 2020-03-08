@@ -1,12 +1,12 @@
 import React from "react"
 import Octicon, { Star } from "@githubprimer/octicons-react"
 import GitHubButton from "react-github-btn"
-import mystyles from './repository.module.scss'
+import styles from './projects.module.scss'
 
 const RepositoryHeader = ({ repo }) => {
   return (
     <div
-      className={mystyles.header}
+      className={styles.header}
     >
       <h3>
         <a
@@ -30,7 +30,7 @@ const RepositoryHeader = ({ repo }) => {
 }
 
 const FooterItem = ({ children }) => (
-  <span className={mystyles.footer_item}>{children}</span>
+  <span className={styles.footer_item}>{children}</span>
 )
 
 const RepositoryFooter = ({ repo }) => {
@@ -46,10 +46,10 @@ const RepositoryFooter = ({ repo }) => {
     )
   }
   return (
-    <div className={mystyles.footer}>
+    <div className={styles.footer}>
       <FooterItem>
         <span
-          className={mystyles.language_icon}
+          className={styles.language_icon}
           style={{
             backgroundColor: language.color,
           }}
@@ -67,7 +67,7 @@ const RepositoryFooter = ({ repo }) => {
 }
 
 const RepositoryDescription = ({ repo }) => (
-  <div className={mystyles.description}>
+  <div className={styles.description}>
     <p>
       {repo.description}
 
@@ -83,7 +83,7 @@ const RepositoryDescription = ({ repo }) => (
 const Repository = ({ repo }) => {
   return (
     <div
-      className={mystyles.repository}
+      className={styles.repository}
     >
       <RepositoryHeader repo={repo} />
       <RepositoryDescription repo={repo} />

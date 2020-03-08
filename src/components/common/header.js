@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import mystyles from './header.module.scss'
+import styles from './header.module.scss'
 import { slide as Menu } from 'react-burger-menu'
 import {isMobile} from 'react-device-detect';
 
@@ -11,9 +11,9 @@ import './burger.css'
 const Header = () => {
     if (isMobile) {
         return (
-            <div className={mystyles.mobile}>
-                <div className={mystyles.my_name}>Juliet Rubin</div>
-                <Menu className={mystyles.menu} right outerContainerId={ "outer-container" } pageWrapId={ "page-wrap" } disableAutoFocus>
+            <div className={styles.mobile}>
+                <div className={styles.my_name}>Juliet Rubin</div>
+                <Menu className={styles.menu} right outerContainerId={ "outer-container" } pageWrapId={ "page-wrap" } disableAutoFocus>
                     <HeaderLinks />
                 </Menu>
             </div>
@@ -21,8 +21,8 @@ const Header = () => {
     }
     else {
         return (
-            <header className={mystyles.desktop}>
-                <div className={mystyles.my_name}>Juliet Rubin</div>
+            <header className={styles.desktop}>
+                <div className={styles.my_name}>Juliet Rubin</div>
                 <HeaderLinks />
             </header>
         )
@@ -32,10 +32,10 @@ const Header = () => {
 const HeaderLinks = () => {
     return (
         <React.Fragment>
-            <Link className={mystyles.link} to="/">home</Link>
-            <Link className={mystyles.link} to="/contact">contact</Link>
-            <Link className={mystyles.link} to="/projects">projects</Link>
-            <a className={mystyles.link} href="https://gitconnected.com/julietrubin/resume" target="_blank">resume</a>
+            <Link className={styles.link} to="/">home</Link>
+            <Link className={styles.link} to="/contact">contact</Link>
+            <Link className={styles.link} to="/projects">projects</Link>
+            <a className={styles.link} href="https://gitconnected.com/julietrubin/resume" target="_blank">resume</a>
         </React.Fragment>
     );
 }
