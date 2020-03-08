@@ -21,9 +21,11 @@ const AboutMe = ({avatarUrl}) => {
                 </div>
 
                 <FollowMe />
-                {isMobile && (<Link to="/contact" className={styles.link}>contact me</Link>)}
-                {isMobile && (<Link to="/projects" className={styles.link}>view projects</Link>)}
-                {isMobile && (<a className={styles.link} href="https://gitconnected.com/julietrubin/resume" target="_blank" className={styles.link}>view resume</a>)}
+                <MobileView>
+                    <Link to="/contact" className={styles.link}>contact me</Link>
+                    <Link to="/projects" className={styles.link}>view projects</Link>
+                    <a className={styles.link} href="https://gitconnected.com/julietrubin/resume" target="_blank" className={styles.link}>view resume</a>
+                </MobileView>
         </DeviceLayout>
     );
 }
