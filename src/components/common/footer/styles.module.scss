@@ -27,31 +27,37 @@
 }
 
 /* Mobile Web Style */
-.mobile {
-    font-size: 15px;
-    height: 150px;
-    padding-top: 10px;
-    flex-grow: 1;
-
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: -5px;
-    }
+@media only screen and (max-width: 600px) {
+    .container {
+        font-size: 15px;
+        height: 150px;
+        padding-top: 10px;
+        flex-grow: 1;
     
-    .my_portfolio {
-        padding: 15px;
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: -5px;
+        }
+        
+        .my_portfolio {
+            padding: 15px;
+        }
     }
 }
 
+
+
 /* Desktop Style */
-.desktop {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    justify-content: center;
-    text-align: center
+@media only screen and (min-width: 601px) {
+    .container {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        justify-content: center;
+        text-align: center
+    }
 }

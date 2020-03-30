@@ -50,7 +50,7 @@
 }
 
 /* Desktop Style */
-.desktop {
+@media only screen and (min-width: 601px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.2rem 1.2rem;

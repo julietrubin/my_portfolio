@@ -10,8 +10,12 @@
     display: inline-block;
 }
 
+.content {
+    display: flex;
+}
+
 /* Mobile Web Style */
-.mobile {
+@media only screen and (max-width: 600px) {
     .content {
         flex-direction: column;
     }
@@ -35,13 +39,11 @@
     }
 }
 
-.content {
-    display: flex;
-}
-
 /* Desktop Style */
-.desktop {
-    padding: 0 20px;
+@media only screen and (min-width: 601px) {
+    .container {
+        padding: 0 20px;
+    }
 
     .text {
         width: 700px;
@@ -56,8 +58,5 @@
     .avatar {
         width: 250px;
         height: 250px;
-    }
-    .header {
-        // margin-bottom: 0;
     }
 }

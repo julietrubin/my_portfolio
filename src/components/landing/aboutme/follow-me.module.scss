@@ -17,13 +17,17 @@
 }
 
 /* Desktop Style */
-.desktop {
-    margin-top: 30px;
+@media only screen and (min-width: 601px) {
+    .container {
+        margin-top: 30px;
+    }
 }
 
 /* Mobile Web Style */
-.mobile {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    order: 3;
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        order: 3;
+    }
 }
