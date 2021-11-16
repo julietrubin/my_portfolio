@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Footer from "../footer/index"
 import Header from "../header/index"
-import styles from './styles.module.scss'
+import * as styles from './styles.module.scss'
 
 import "./normalize.css"
 import DeviceLayout from "../device"

@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactForm from './contactform'
 import DeviceLayout from '../../common/device/index'
-import styles from './styles.module.scss'
+import * as styles from './styles.module.scss'
 
 
 const Contact = () => {

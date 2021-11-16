@@ -1,5 +1,5 @@
 import React from "react"
-import styles from './follow-me.module.scss'
+import * as styles from './follow-me.module.scss'
 import DeviceLayout from '../../common/device/index'
 
 const FollowMe = () => {

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
 import {isMobile} from 'react-device-detect';
 
-import styles from './styles.module.scss'
+import * as styles from './styles.module.scss'
 import './burger.css'
 
 const Header = () => {

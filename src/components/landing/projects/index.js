@@ -1,7 +1,7 @@
 import React from "react"
 
 import Repository from "./repository"
-import styles from './styles.module.scss'
+import * as styles from './styles.module.scss'
 import DeviceLayout from '../../common/device/index'
 
 

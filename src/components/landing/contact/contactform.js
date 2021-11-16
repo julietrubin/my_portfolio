@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik, Field } from 'formik'
 import validationSchema from './validationSchema'
-import styles from './styles.module.scss'
+import * as styles from './styles.module.scss'
 import Recaptcha from 'react-google-recaptcha'
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;

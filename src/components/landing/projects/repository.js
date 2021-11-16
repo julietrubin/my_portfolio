@@ -1,7 +1,7 @@
 import React from "react"
 import Octicon, { Star } from "@githubprimer/octicons-react"
 import GitHubButton from "react-github-btn"
-import styles from './styles.module.scss'
+import * as styles from './styles.module.scss'
 
 const RepositoryHeader = ({ repo }) => {
   return (

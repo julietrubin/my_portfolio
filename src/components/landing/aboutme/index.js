@@ -3,7 +3,7 @@ import React from "react"
 import { Link } from "gatsby"
 import {MobileView} from 'react-device-detect';
 
-import styles from './styles.module.scss'
+import * as styles from './styles.module.scss'
 import FollowMe from './follow-me'
 import DeviceLayout from '../../common/device/index'
 
