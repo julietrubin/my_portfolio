@@ -73,7 +73,7 @@ const RepositoryDescription = ({ repo }) => (
 
       {repo.homepageUrl && (
         <>
-          {" -"} <a href={repo.homepageUrl}>{repo.homepageUrl}</a>
+          {" -"} <a target="_blank" href={repo.homepageUrl}>{repo.homepageUrl}</a>
         </>
       )}
     </p>

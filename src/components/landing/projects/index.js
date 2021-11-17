@@ -3,38 +3,23 @@ import React from "react"
 import Repository from "./repository"
 import * as styles from './styles.module.scss'
 import DeviceLayout from '../../common/device/index'
+import studio54img from '../../../images/studio54.png'
+import calculatorImg from '../../../images/calculator.png'
+import Website from "./websites"
 
 
 const Projects = ({repositories}) => {
     return (
         <DeviceLayout styles={styles}>
-            <h1>projects</h1>
-            <div className={styles.grid}>
-                <div className={styles.repository}>
-                <div >
-                    <h3>
-                        <a
-                        href={`https://insidestudio54.com`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        Inside Studio 54
-                        </a>
-                    </h3>
-                    <div className={styles.description}>
-                        <p>
-                        Built with Webflow 
+            <h1>websites</h1>
+            <div style={{backgroundColor: `black`, padding: `20px 0`}} >
+                <Website img={studio54img} href="https://insidestudio54.com" first={true} />
 
-                        {/* {repo.homepageUrl && (
-                            <>
-                            {" -"} <a href={repo.homepageUrl}>{repo.homepageUrl}</a>
-                            </>
-                        )} */}
-                        </p>
-                    </div>
-                    
-                    </div>
-                </div>
+                <Website img={calculatorImg} href="https://calculator.julietrubin.com" />
+            </div>
+
+            <h1 style={{paddingTop: `40px`}}>github projects</h1>
+            <div className={styles.grid}>
                 {repositories.nodes
                 .map(repo => <Repository key={repo.name} repo={repo} />)
                 .reverse()}
