@@ -1,13 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
-import {isMobile} from 'react-device-detect';
 
 import * as styles from './styles.module.scss'
 import './burger.css'
 
 const Header = () => {
-    if (isMobile) {
+    if(typeof window === 'undefined') {
+        return <></>
+      } else if (window && window.innerWidth < 580) {
         return (
             <div className={styles.mobile}>
                 <div className={styles.my_name}>Juliet Rubin</div>
@@ -16,8 +17,7 @@ const Header = () => {
                 </Menu>
             </div>
         );
-    }
-    else {
+    } else {
         return (
             <header className={styles.desktop}>
                 <div className={styles.my_name}>Juliet Rubin</div>
