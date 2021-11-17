@@ -1,7 +1,1 @@
-https://github.com/lundgren2/gatsby-starter-github-api
-
-TODO:
-MW
-HTML TITLE
-ORGANIZE FOLDERS
-ABOUT ME TEXT
+Juliet Rubin's portfolio. Built with Gatsby.js, deployed with netlify. Queries github to display projects. 
