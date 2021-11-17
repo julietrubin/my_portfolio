@@ -12,7 +12,12 @@ const AboutMe = ({avatarUrl}) => {
         <DeviceLayout styles={styles}>
             <h1 className={styles.header}>about me</h1>
                 <div className={styles.content}>
-                    <div className={styles.text}>I'm a Software Engineer.... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</div>
+                    <div className={styles.text}>I'm a Software Engineer with a passion for creating a great user experience and clean code. I have a 
+                    Bachelors of Science, Cum Laude, in Computer Science from University of San Francisco.
+                    My top languages and frameworks are Python/Django, Javascript/React.js, and Dart/Flutter. 
+                    I started as a Backend Engineer, transitioned to Fullstack/Frontend and then learned Mobile Development for a personal project.
+                     I enjoy creating new features, debugging, refactoring code, and the code review process. I'm currently doing freelance work with website builders to 
+                     create easily maintainable and quick to produce websites. </div>
                     <img
                         src={avatarUrl}
                         alt="avatar"
