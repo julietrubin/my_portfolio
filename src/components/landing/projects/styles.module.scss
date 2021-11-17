@@ -4,14 +4,23 @@
 	grid-template-columns: repeat(1, 1fr);
 }
 
+.website_container {
+    background-color: black; 
+    padding: 20px 0;
+    border-radius: 3px;
+}
+
+.website:first-of-type {
+    padding: 0px;
+}
 .website {
     padding-top: 20px;
     text-align: center;
-    .first {
-        padding: 9px;
-    }
+
+
     img {
         max-width: 85%;
+        border-radius: 3px;
     }
 }
 

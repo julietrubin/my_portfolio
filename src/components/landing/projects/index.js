@@ -12,8 +12,8 @@ const Projects = ({repositories}) => {
     return (
         <DeviceLayout styles={styles}>
             <h1>websites</h1>
-            <div style={{backgroundColor: `black`, padding: `20px 0`}} >
-                <Website img={studio54img} href="https://insidestudio54.com" first={true} />
+            <div className={styles.website_container} >
+                <Website img={studio54img} href="https://insidestudio54.com" />
 
                 <Website img={calculatorImg} href="https://calculator.julietrubin.com" />
             </div>
