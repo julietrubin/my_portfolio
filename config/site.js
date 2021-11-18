@@ -1,6 +1,6 @@
 module.exports = {
-  title: ``,
-  description: ``,
+  title: `Juliet Rubin`,
+  description: `I'm a Software Engineer with a passion for creating elegant websites and mobile apps. After many years working at tech companies, I am now available for hire as a freelance developer.`,
   author: `@julietrubin`,
   siteUrl: `https://www.julietrubin.com`,
   githubApiToken: process.env.GITHUB_API_TOKEN,

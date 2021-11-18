@@ -12,12 +12,10 @@ const AboutMe = ({avatarUrl}) => {
         <DeviceLayout styles={styles}>
             <h1 className={styles.header}>about me</h1>
                 <div className={styles.content}>
-                    <div className={styles.text}>I'm a Software Engineer with a passion for creating a great user experience and clean code. I have a 
-                    Bachelors of Science, Cum Laude, in Computer Science from University of San Francisco.
-                    My top languages and frameworks are Python/Django, Javascript/React.js, and Dart/Flutter. 
-                    I started as a Backend Engineer, transitioned to Fullstack/Frontend and then learned Mobile Development for a personal project.
-                     I enjoy creating new features, debugging, refactoring code, and the code review process. I'm currently doing freelance work with website builders to 
-                     create easily maintainable and quick to produce websites. </div>
+                    <div className={styles.text}>I'm a Software Engineer with a passion for creating elegant websites and mobile apps. 
+                    I have a Bachelors of Science, Cum Laude, in Computer Science from University of San Francisco.
+                    After many years working at tech companies, I am now available for hire as a freelance developer.
+                    </div>
                     <img
                         src={avatarUrl}
                         alt="avatar"
@@ -36,3 +34,12 @@ const AboutMe = ({avatarUrl}) => {
 }
 
 export default AboutMe
+
+
+// 'm a Software Engineer with a passion for creating a great user experience and clean code. I have a 
+//                     Bachelors of Science, Cum Laude, in Computer Science from University of San Francisco. I have extensive experience as a Backend, Frontend, and Mobile Developer.
+//                     My top languages and frameworks are Python/Django, Javascript/React.js, and Dart/Flutter. 
+//                     I enjoy creating new features, debugging, refactoring code, and the code review process. After many years working for tech companies, I am now available for hire
+//                     as a freelance Web Developer. I create elegant and easily maintainable websites for .
+
+//I have extensive experience as a Backend, Frontend, and Mobile Developer.                     My top languages and frameworks are Python/Django, Javascript/React.js, and Dart/Flutter.
