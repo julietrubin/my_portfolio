@@ -10,11 +10,14 @@ import DeviceLayout from '../../common/device/index'
 const AboutMe = ({avatarUrl}) => {
     return (
         <DeviceLayout styles={styles}>
-            <h1 className={styles.header}>about me</h1>
                 <div className={styles.content}>
-                    <div className={styles.text}>I'm a Software Engineer with a passion for creating elegant websites and mobile apps. 
+                    <div className={styles.text}>
+                    <h1 className={styles.header}>about me</h1>
+
+                    <p>I'm a Software Engineer with a passion for creating elegant websites and mobile apps. 
                     I have a Bachelors of Science, Cum Laude, in Computer Science from University of San Francisco.
-                    After many years working at tech companies, I am now available for hire as a freelance developer.
+                    After many years working at tech companies, I am now available for hire as a freelance developer.</p>
+                    <FollowMe />
                     </div>
                     <img
                         src={avatarUrl}
@@ -23,7 +26,7 @@ const AboutMe = ({avatarUrl}) => {
                     />
                 </div>
 
-                <FollowMe />
+                
                 <MobileView>
                     <Link to="/contact" className={styles.link}>contact me</Link>
                     <Link to="/projects" className={styles.link}>view projects</Link>

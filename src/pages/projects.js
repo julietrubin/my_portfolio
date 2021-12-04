@@ -9,7 +9,7 @@ const ProjectsPage = ({data}) => {
     const {repositories} = data.githubData.data.viewer;
     return (
         <Layout>
-            <SEO title="Juliet Rubin | Projects" />
+            <SEO title="Juliet Rubin | Projects" meta={[{name: `robots`, content: "noindex"}]}/>
             <Projects repositories={repositories}/>
         </Layout>
     )
