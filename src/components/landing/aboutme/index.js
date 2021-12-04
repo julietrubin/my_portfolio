@@ -18,6 +18,7 @@ const AboutMe = ({avatarUrl}) => {
                     I have a Bachelors of Science, Cum Laude, in Computer Science from University of San Francisco.
                     After many years working at tech companies, I am now available for hire as a freelance developer. 
                     I create beautifully designed and easily maintainable websites. </p>
+                    <FollowMe />
                     </div>
                     <img
                         src={avatarUrl}
