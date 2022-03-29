@@ -5,8 +5,6 @@ import * as styles from './styles.module.scss'
 import DeviceLayout from '../../common/device/index'
 import studio54img from '../../../images/studio54.png'
 import calculatorImg from '../../../images/calculator.png'
-import betterwebsitesnow from '../../../images/betterwebsitesnow.png'
-import doggy from '../../../images/doggy.png'
 
 import Website from "./websites"
 
@@ -16,10 +14,8 @@ const Projects = ({repositories}) => {
         <DeviceLayout styles={styles}>
             <h1>websites</h1>
             <div className={styles.website_container} >
-                <Website img={doggy} href="https://www.doggydenboarding.com/" />
                 <Website img={studio54img} href="https://insidestudio54.com" />
                 <Website img={calculatorImg} href="https://calculator.julietrubin.com" />
-                <Website img={betterwebsitesnow} href="https://betterwebsitesnow.com"/>
             </div>
 
             <h1 style={{paddingTop: `40px`}}>github projects</h1>

@@ -14,10 +14,8 @@ const AboutMe = ({avatarUrl}) => {
                     <div className={styles.text}>
                     <h1 className={styles.header}>about me</h1>
 
-                    <p>I'm a Software Engineer with a passion for creating elegant websites and mobile apps. 
-                    I have a Bachelors of Science, Cum Laude, in Computer Science from University of San Francisco.
-                    After many years working at tech companies, I am now available for hire as a freelance developer. 
-                    I create beautifully designed and easily maintainable websites. </p>
+                    <p>I am a Full Stack Web and Mobile App Developer with a passion for creating a great user experience. I have a Bachelors of Science, Cum Laude, in Computer Science and over 10 years of experience in the tech industry. 
+                         </p>
                     <FollowMe />
                     </div>
                     <img
