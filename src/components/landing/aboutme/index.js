@@ -14,7 +14,7 @@ const AboutMe = ({avatarUrl}) => {
                     <div className={styles.text}>
                     <h1 className={styles.header}>about me</h1>
 
-                    <p>I am a Full Stack Web and Mobile App Developer with a passion for creating a great user experience. I have a Bachelors of Science, Cum Laude, in Computer Science and over 10 years of experience in the tech industry. 
+                    <p>I'm a Full Stack Web and Mobile App Developer with a passion for creating a great user experience. I have a Bachelors of Science, Cum Laude, in Computer Science and over 10 years of experience in the tech industry. 
                          </p>
                     <FollowMe />
                     </div>
