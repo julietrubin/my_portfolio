@@ -9,29 +9,13 @@ import computer from '../../../images/computer.png'
 const Contact = () => {
     return (
         <DeviceLayout styles={styles}>
-            <div className={styles.row}>
-                <div className={styles.column} >
-                <h1>contact me</h1>
-
-                <ContactForm />
-                </div>
-                <div className={styles.column} >
+            <div className={styles.background}>
                 <img src={computer} className={styles.computer}></img>
-
-                </div>
             </div>
-
-
-{/* <table className={styles.row}>
-                <tr>
-                    <td>
+            <div className={styles.contact} >
+                <h1>contact me</h1>
                 <ContactForm />
-                </td>
-                <td className={styles.column} >
-                <img src={computer} className={styles.computer}></img>
-</td>
-                </tr>
-            </table> */}
+            </div>
         </DeviceLayout>
   )
 }
