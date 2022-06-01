@@ -31,7 +31,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.20",
-    "sharp": "^0.29.3",
+    "sharp": "^0.30.5",
     "typography": "^0.16.21",
     "typography-theme-github": "^0.16.19",
     "yup": "^0.32.11"
