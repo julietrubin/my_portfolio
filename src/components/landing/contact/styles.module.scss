@@ -28,11 +28,13 @@
     font-family: sans-serif;
     font-weight: bold;
 }
+
 .button:hover {
     background-color: lightskyblue;
 }
+
 .form {
-    div{
+    div {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -61,22 +63,23 @@
     .computer {
         opacity: 0.95;
         border-radius: 10px;
+        min-height: 350px;
     }
 }
 
 /* Desktop Style */
 @media only screen and (min-width: 1201px) {
-    .button { 
+    .button {
         width: 600px;
     }
-    
+
     .background {
         position: absolute;
         z-index: 0;
     }
 
     .contact {
-        background-color: wheat; 
+        background-color: wheat;
         padding: 20px;
         border-radius: 10px;
         position: absolute;
@@ -90,4 +93,3 @@
         border-radius: 20px;
     }
 }
-
